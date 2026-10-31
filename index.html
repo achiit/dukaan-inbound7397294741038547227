@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ghunghroo Jewellers, Bopal, Ahmedabad</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --maroon:#4a0f1c;--maroon2:#6b1a2b;--gold:#c9a24b;--gold-soft:#e6c981;
+  --bg:#fbf4e4;--surface:#fffaf0;--ink:#2b1a14;--muted:#6d5a4f;--line:#e3d3ac;
+  --serif:"Cormorant Garamond",Georgia,serif;--sans:"Karla",system-ui,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1210;--surface:#2a1a16;--ink:#f3e8d2;--muted:#bfae98;--line:#4a3528}}
+:root[data-theme="dark"]{--bg:#1d1210;--surface:#2a1a16;--ink:#f3e8d2;--muted:#bfae98;--line:#4a3528}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--sans)}
+h1,h2,h3{font-family:var(--serif);line-height:1.1;margin:0}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+.hero{background:radial-gradient(120% 90% at 50% 0%,var(--maroon2),var(--maroon) 70%);color:#fbeed0;padding:28px 0 56px;overflow:hidden}
+.brand{display:flex;justify-content:space-between;align-items:center;font-family:var(--serif);font-size:1.35rem;font-weight:700;color:var(--gold-soft)}
+.brand a{font:600 .95rem var(--sans);text-decoration:none;border:1px solid var(--gold);padding:8px 14px;border-radius:999px;color:var(--gold-soft)}
+.bells{display:flex;justify-content:center;gap:clamp(14px,5vw,34px);margin:30px 0 8px;border-top:2px solid var(--gold);width:min(420px,90%);margin-inline:auto}
+.bell{width:clamp(22px,6vw,34px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff3c7,var(--gold) 55%,#8c6a1f);margin-top:14px;position:relative;transform-origin:50% -14px;animation:sway 3.2s ease-in-out 1 both}
+.bell::before{content:"";position:absolute;left:50%;top:-14px;width:2px;height:14px;background:var(--gold);transform:translateX(-50%)}
+.bell:nth-child(2){animation-delay:.15s}.bell:nth-child(3){animation-delay:.3s}.bell:nth-child(4){animation-delay:.45s}.bell:nth-child(5){animation-delay:.6s}
+@keyframes sway{0%{transform:rotate(0)}15%{transform:rotate(14deg)}35%{transform:rotate(-10deg)}55%{transform:rotate(6deg)}75%{transform:rotate(-3deg)}100%{transform:rotate(0)}}
+@media (prefers-reduced-motion:reduce){.bell{animation:none}}
+.hero h1{font-size:clamp(2.6rem,9vw,4.6rem);text-align:center;font-weight:700;margin-top:18px;color:#fff6df}
+.hero p{max-width:34ch;margin:16px auto 0;text-align:center;font-size:1.1rem;color:#ecd9b0}
+.cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.btn{display:inline-block;padding:14px 24px;border-radius:999px;font-weight:600;text-decoration:none;background:var(--gold);color:#2b1a14}
+.btn.alt{background:transparent;color:var(--gold-soft);border:1.5px solid var(--gold)}
+
+section{padding:52px 0}
+h2{font-size:clamp(2rem,6vw,2.8rem);font-weight:700;color:var(--maroon)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2{color:var(--gold-soft)}}
+:root[data-theme="dark"] h2{color:var(--gold-soft)}
+.sub{color:var(--muted);max-width:52ch;margin:10px 0 28px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.item{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--gold);padding:18px 20px;border-radius:6px}
+.item h3{font-size:1.5rem}
+.item p{margin:6px 0 0;color:var(--muted);font-size:.97rem}
+.band{background:var(--surface);border-block:1px solid var(--line)}
+.why{display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.why h3{font-size:1.45rem;margin-bottom:6px}
+.why p{margin:0;color:var(--muted)}
+.visit{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.visit dl{margin:0}.visit dt{font-weight:600;margin-top:14px}.visit dd{margin:2px 0 0;color:var(--muted)}
+footer{background:var(--maroon);color:#d9c391;text-align:center;padding:26px 20px;font-size:.92rem}
+footer b{font-family:var(--serif);font-size:1.3rem;color:var(--gold-soft)}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">Ghunghroo Jewellers <a href="tel:+919213579690">Call karein</a></div>
+    <div class="bells" aria-hidden="true"><i class="bell"></i><i class="bell"></i><i class="bell"></i><i class="bell"></i><i class="bell"></i></div>
+    <h1>Shuddhata aur vishwas ke saath</h1>
+    <p>Sundar aur aakarshak jewellery designs, roj ke taaza market bhav par. Bopal, Ahmedabad.</p>
+    <div class="cta">
+      <a class="btn" href="https://wa.me/919213579690">WhatsApp par puchhein</a>
+      <a class="btn alt" href="#visit">Showroom aayein</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="collection">
+  <div class="wrap">
+    <h2>Hamara collection</h2>
+    <p class="sub">Traditional aur modern, dono prakar ke designs. Har piece ka daam daily market rate anusar.</p>
+    <div class="grid">
+      <div class="item"><h3>Gold &amp; Silver Necklaces</h3><p>Shaadi aur tyohaar ke liye, roz pehenne layak bhi.</p></div>
+      <div class="item"><h3>Designer Haar Sets</h3><p>Bhaari aur nazuk, dono tarah ke haar sets.</p></div>
+      <div class="item"><h3>Diamond &amp; Gold Rings</h3><p>Engagement se gift tak, har mauke ki ring.</p></div>
+      <div class="item"><h3>Earrings / Butti</h3><p>Chhoti butti se lekar statement earrings tak.</p></div>
+      <div class="item"><h3>Gold Chains</h3><p>Har wazan aur design mein, aapke budget anusar.</p></div>
+      <div class="item"><h3>Custom Designs</h3><p>Aapka design, hamari banawat. Pehle baat karein, phir banwayein.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Kyon Ghunghroo</h2>
+    <p class="sub">5 saal se zyada se Bopal ke parivaron ka bharosa.</p>
+    <div class="why">
+      <div><h3>Roj ka taaza bhav</h3><p>Pricing daily bullion rate par aadharit hai, isliye daam seedha aur saaf.</p></div>
+      <div><h3>Shuddh, vishwaspatra jewellery</h3><p>Shuddhata hamari pehchaan hai. Aap befikar kharidiye.</p></div>
+      <div><h3>Custom design</h3><p>Apni pasand ka design bataiye, hum banwa denge.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <h2>Showroom par aayein</h2>
+    <div class="visit">
+      <dl>
+        <dt>Pata</dt><dd>Ghunghroo Jewellers, Near GEB Park, Bopal, Ahmedabad, Gujarat</dd>
+        <dt>Samay</dt><dd>Somwar se Shanivar: 10:30 AM se 8:30 PM<br>Ravivar: aadhha din ya band, call karke confirm karein</dd>
+        <dt>Phone</dt><dd><a href="tel:+919213579690">921 357 9690</a> (Jignesh)</dd>
+      </dl>
+      <div>
+        <p class="sub" style="margin-top:14px">Aaj ka sone-chandi ka bhav jaanna hai? Call ya WhatsApp karein, turant bataenge.</p>
+        <div class="cta" style="justify-content:flex-start;margin-top:0">
+          <a class="btn" href="tel:+919213579690">Call karein</a>
+          <a class="btn alt" style="color:var(--maroon);border-color:var(--maroon)" href="https://www.google.com/maps/search/?api=1&amp;query=Ghunghroo+Jewellers+Bopal+Ahmedabad">Map kholein</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><b>Ghunghroo Jewellers</b><br>Shuddhata aur vishwas ke saath. Bopal, Ahmedabad.</footer>
+</body>
+</html>
